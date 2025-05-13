@@ -1,0 +1,157 @@
+/* General reset and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #121212;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #64ffda;
+  transform: translateY(-2px);
+}
+
+/* Home Section Styles */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.hero {
+  max-width: 800px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero .highlight {
+  color: #64ffda;
+  font-weight: 600;
+}
+
+.hero .btn {
+  background-color: #64ffda;
+  color: #121212;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ffffff;
+  color: #121212;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .hero .btn {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
