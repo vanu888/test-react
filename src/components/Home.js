@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="home-container">
             <h1>Welcome to my portfolio</h1>
-            <p><pre>Hi 👋, I'm Vihanga Anuththara
+            <pre>Hi 👋, I'm Vihanga Anuththara
 
                 a self-taught Python developer with a passion for web design and open-source projects. I enjoy building applications that are both functional and aesthetically pleasing.
 
@@ -14,7 +14,7 @@ function Home() {
 
                 - 🗿 I’m looking to collaborate on open-source projects where I can contribute and learn from others.
 
-                - 💬 Ask me about Python, web development, or anything related to programming!</pre></p>
+                - 💬 Ask me about Python, web development, or anything related to programming!</pre>
         </div>
     );
 }
